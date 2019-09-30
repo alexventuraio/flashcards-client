@@ -163,7 +163,7 @@ class Main extends Component {
 
   fetchUserDetails() {
     utils.fetchUserDetails({token: this.props.token}).then(info => {
-      this.setState({info});
+      this.setState({info: info[0]});
     });
   }
 
