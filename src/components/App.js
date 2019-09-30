@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   isLoggedIn() {
-    return !!this.state.toke;
+    return !!this.state.token;
   }
 
   render() {
