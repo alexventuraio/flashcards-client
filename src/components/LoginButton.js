@@ -3,8 +3,8 @@ import Button from 'react-toolbox/lib/button/Button';
 import GithubIcon from './GithubIcon';
 import './LoginButton.css';
 
-const authorizeUrl = 'https://github.com/login/oauth/authorize';
-const clientId = '7f7d6103e2acb6a28cb7';
+const authorizeUrl = process.env.REACT_APP_GITHUB_AUTHORIZE_URL;
+const clientId = process.env.REACT_APP_CLIENT_ID;
 const scope = 'user';
 
 class LoginButton extends Component {

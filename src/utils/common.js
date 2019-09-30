@@ -8,7 +8,7 @@ export function getQueryParams() {
   }, {});
 }
 
-const baseApiUrl = 'https://flashcards-server.herokuapp.com';
+const baseApiUrl = 'http://localhost:3000';
 
 export function fetchUserDetails(options) {
   const {token} = options;
